@@ -1,0 +1,41 @@
+.F
+======================================================================
+FAIL: test_youdao (test_youdao.MyTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\selenium test\module test\testproject\test_case\test_youdao.py", line 28, in test_youdao
+    self.assertEqual(title, "webdriver - 有道搜索", msg="网址标题有误！")
+AssertionError: '在线翻译_有道' != 'webdriver - 有道搜索'
+- 在线翻译_有道
++ webdriver - 有道搜索
+ : 网址标题有误！
+
+----------------------------------------------------------------------
+Ran 2 tests in 52.417s
+
+FAILED (failures=1)
+unittest_百度搜索
+在线翻译_有道
+.E
+======================================================================
+ERROR: test_youdao (test_youdao.MyTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\selenium test\module test\testproject\test_case\test_youdao.py", line 12, in setUp
+    self.driver = webdriver.Firefox()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\selenium\webdriver\firefox\webdriver.py", line 77, in __init__
+    self.binary, timeout),
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\selenium\webdriver\firefox\extension_connection.py", line 49, in __init__
+    self.binary.launch_browser(self.profile)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\selenium\webdriver\firefox\firefox_binary.py", line 68, in launch_browser
+    self._wait_until_connectable()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\selenium\webdriver\firefox\firefox_binary.py", line 103, in _wait_until_connectable
+    raise WebDriverException("Can't load the profile. Profile "
+selenium.common.exceptions.WebDriverException: Message: Can't load the profile. Profile Dir: %s If you specified a log_file in the FirefoxBinary constructor, check it for details.
+
+
+----------------------------------------------------------------------
+Ran 2 tests in 80.597s
+
+FAILED (errors=1)
+unittest_百度搜索
